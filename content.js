@@ -33,7 +33,7 @@ window.PORTFOLIO = {
         src: "assets/yung-lean-mobile.webp", width: 375, height: 812,
         alt: "Мобильная версия сайта о Yung Lean: первый экран и начало коллекции альбомов"
       },
-      embedUrl: "projects/yung-lean/index.html",
+      embedUrl: "projects/yung-lean/index.html?v=book2",
       liveUrl: null,
       codeUrl: null
     },
