@@ -145,11 +145,11 @@
     projectFrame.src = url;
     projectFrame.addEventListener('load', () => {
       viewerStatus.hidden = true;
-      // Escape в книжном интро сначала пропускает интро. На основном сайте
-      // та же клавиша закрывает просмотр и возвращает фокус в портфолио.
+      // Escape сначала закрывает внутренний диалог или книжное интро.
+      // На основной странице проекта клавиша возвращает к портфолио.
       projectFrame?.contentDocument?.addEventListener('keydown', keyEvent => {
         if (keyEvent.key !== 'Escape') return;
-        if (projectFrame.contentDocument.querySelector('.intro[role="dialog"]')) {
+        if (projectFrame.contentDocument.querySelector('.intro[role="dialog"],.modal[role="dialog"]')) {
           introHandlesEscape = true;
           setTimeout(() => { introHandlesEscape = false; }, 0);
         } else {
