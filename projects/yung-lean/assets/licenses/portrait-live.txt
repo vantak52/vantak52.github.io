@@ -1,0 +1,9 @@
+Yung Lean, Clout Festival 2024 03 (cropped).jpg
+Photographer: Wojciech Pędzich
+Source: https://commons.wikimedia.org/wiki/File:Yung_Lean,_Clout_Festival_2024_03_(cropped).jpg
+Original dimensions: 1904 x 2770
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+
+Site adaptations: resized to 1200 px wide, encoded as WebP; cropped, monochrome and presented with a circular soft alpha mask in CSS. The original source is retained in reference-assets/portrait-clout-2024.jpg.
+Neither the photographer nor the subject endorses this unofficial fan concept.
