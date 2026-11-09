@@ -1,67 +1,323 @@
-/* Все данные для замены логотипа, изображений, описаний и ссылок — здесь.
-   Изображения кладите в assets/. null означает: материал пока не добавлен.
-   Пустые ссылки не превращаются в кнопки. Не используйте # вместо адреса сайта.
-   Пример изображения: { src: "assets/yung-lean-desktop.webp", width: 1440,
-     height: 960, alt: "Главная страница сайта о Yung Lean", full: "assets/yung-lean-desktop-full.webp" }
-   full необязателен: увеличенный снимок для проектов без embedUrl.
-   Если есть embedUrl, нажатие запускает действующий сайт в выбранном размере.
-*/
+/* Данные проектов, изображения, ссылки и переводы редактируются здесь.
+   en содержит английскую версию описания. embedUrl открывает работающий сайт. */
 window.PORTFOLIO = {
-  brand: "vantak",
-  ownerName: "Владислав Ящишен",
-  logo: null, // Например: { src: "assets/logo.svg", width: 180, height: 54 }
-  telegram: { handle: "@VANTAK_1", url: "https://t.me/VANTAK_1" },
-  email: "vantakus@mail.ru",
-  projects: [
+  "brand": "vantak",
+  "ownerName": "Владислав Ящишен",
+  "logo": null,
+  "telegram": {
+    "handle": "@VANTAK_1",
+    "url": "https://t.me/VANTAK_1"
+  },
+  "email": "vantakus@mail.ru",
+  "projects": [
     {
-      id: "yung-lean",
-      number: "01",
-      title: "Yung Lean",
-      category: "Фан-концепт / музыка",
-      description: "Концепт сайта о европейском туре Yung Lean.",
-      note: null,
-      role: null,
-      tasks: [],
-      stack: "React · TypeScript · Vite",
-      features: ["Интерактивное интро с книгой", "Карусель альбомов", "Адаптивный интерфейс"],
-      desktop: {
-        src: "assets/yung-lean-desktop.webp", width: 1425, height: 891,
-        alt: "Компьютерная версия фан-концепта Yung Lean: крупный заголовок European Tour и групповая фотография",
-        full: "assets/yung-lean-desktop-full.webp"
+      "id": "angel-detailing",
+      "number": "01",
+      "title": "Ангел детейлинг",
+      "category": "Сайт / детейлинг-студия",
+      "description": "Сайт студии Angel Detailing в Санкт-Петербурге: услуги по уходу за автомобилем, галерея работ, отзывы и контакты.",
+      "note": null,
+      "role": null,
+      "tasks": [],
+      "stack": "HTML · CSS · JavaScript",
+      "features": [
+        "Каталог услуг и поиск по сайту",
+        "Галерея автомобилей и проектов",
+        "Адаптивный интерфейс"
+      ],
+      "desktop": {
+        "src": "assets/angel-detailing-desktop.png",
+        "width": 1440,
+        "height": 900,
+        "alt": "Компьютерная версия Angel Detailing: заголовок «Ваш автомобиль. В деталях» и Mercedes-Benz в студии"
       },
-      mobile: {
-        src: "assets/yung-lean-mobile.webp", width: 375, height: 812,
-        alt: "Мобильная версия сайта о Yung Lean: первый экран и начало коллекции альбомов"
+      "mobile": {
+        "src": "assets/angel-detailing-mobile.png",
+        "width": 390,
+        "height": 844,
+        "alt": "Мобильная версия Angel Detailing: услуги студии и фотография Mercedes-Benz"
       },
-      embedUrl: "projects/yung-lean/index.html?v=book2",
-      liveUrl: null,
-      codeUrl: null
+      "embedUrl": "/angel-detailing/",
+      "liveUrl": "https://vantak52.github.io/angel-detailing/",
+      "codeUrl": null,
+      "en": {
+        "title": "Angel Detailing",
+        "category": "Website / detailing studio",
+        "description": "A website for Angel Detailing in Saint Petersburg: car care services, a project gallery, reviews and contact details.",
+        "features": [
+          "Service catalogue and site search",
+          "Car and project gallery",
+          "Responsive interface"
+        ],
+        "desktop": {
+          "alt": "Angel Detailing desktop view: Your car. In detail. headline and a Mercedes-Benz in the studio"
+        },
+        "mobile": {
+          "alt": "Angel Detailing mobile view: studio services and a photograph of a Mercedes-Benz"
+        }
+      }
     },
     {
-      id: "soydemsya",
-      number: "02",
-      title: "Сойдёмся",
-      category: "Веб-сервис / встречи",
-      description: "Сервис, который помогает друзьям выбрать место встречи: собрать пожелания, подобрать варианты и проголосовать за общий план.",
-      note: "Интерактивная демоверсия. Встречи и голоса сохраняются только в браузере посетителя.",
-      role: null,
-      tasks: [],
-      stack: "React · TypeScript · Node.js · SQLite",
-      features: ["Пожелания и бюджет участников", "Голосование за демоучастников", "Сохранение демоданных в браузере"],
-      desktop: {
-        src: "assets/soydemsya-desktop.webp", width: 1425, height: 891,
-        alt: "Компьютерная версия «Сойдёмся»: заголовок «Меньше переписки. Больше встреч» и иллюстрация друзей за столом",
-        full: "assets/soydemsya-desktop-full.webp"
+      "id": "yung-lean",
+      "number": "02",
+      "title": "Yung Lean",
+      "category": "Фан-концепт / музыка",
+      "description": "Концепт сайта о европейском туре Yung Lean.",
+      "note": null,
+      "role": null,
+      "tasks": [],
+      "stack": "React · TypeScript · Vite",
+      "features": [
+        "Интерактивное интро с книгой",
+        "Карусель альбомов",
+        "Адаптивный интерфейс"
+      ],
+      "desktop": {
+        "src": "assets/yung-lean-desktop.webp",
+        "width": 1425,
+        "height": 891,
+        "alt": "Компьютерная версия фан-концепта Yung Lean: крупный заголовок European Tour и групповая фотография",
+        "full": "assets/yung-lean-desktop-full.webp"
       },
-      mobile: {
-        src: "assets/soydemsya-mobile.webp", width: 375, height: 812,
-        alt: "Мобильная версия «Сойдёмся»: создание встречи и иллюстрация компании друзей",
-        full: "assets/soydemsya-mobile-full.webp"
+      "mobile": {
+        "src": "assets/yung-lean-mobile.webp",
+        "width": 375,
+        "height": 812,
+        "alt": "Мобильная версия сайта о Yung Lean: первый экран и начало коллекции альбомов"
       },
-      embedUrl: "projects/soidemsya/index.html",
-      liveUrl: null,
-      codeUrl: null
+      "embedUrl": "projects/yung-lean/index.html?v=book2",
+      "liveUrl": null,
+      "codeUrl": null,
+      "en": {
+        "category": "Fan concept / music",
+        "description": "A website concept for Yung Lean’s European tour.",
+        "features": [
+          "Interactive book intro",
+          "Album carousel",
+          "Responsive interface"
+        ],
+        "desktop": {
+          "alt": "Desktop view of the Yung Lean fan concept: European Tour headline and a group photograph"
+        },
+        "mobile": {
+          "alt": "Mobile view of the Yung Lean website: the opening screen and album collection"
+        }
+      }
+    },
+    {
+      "id": "soydemsya",
+      "number": "03",
+      "title": "Сойдёмся",
+      "category": "Веб-сервис / встречи",
+      "description": "Сервис, который помогает друзьям выбрать место встречи: собрать пожелания, подобрать варианты и проголосовать за общий план.",
+      "note": "Интерактивная демоверсия. Встречи и голоса сохраняются только в браузере посетителя.",
+      "role": null,
+      "tasks": [],
+      "stack": "React · TypeScript · Node.js · SQLite",
+      "features": [
+        "Пожелания и бюджет участников",
+        "Голосование за демоучастников",
+        "Сохранение демоданных в браузере"
+      ],
+      "desktop": {
+        "src": "assets/soydemsya-desktop.webp",
+        "width": 1425,
+        "height": 891,
+        "alt": "Компьютерная версия «Сойдёмся»: заголовок «Меньше переписки. Больше встреч» и иллюстрация друзей за столом",
+        "full": "assets/soydemsya-desktop-full.webp"
+      },
+      "mobile": {
+        "src": "assets/soydemsya-mobile.webp",
+        "width": 375,
+        "height": 812,
+        "alt": "Мобильная версия «Сойдёмся»: создание встречи и иллюстрация компании друзей",
+        "full": "assets/soydemsya-mobile-full.webp"
+      },
+      "embedUrl": "projects/soidemsya/index.html",
+      "liveUrl": null,
+      "codeUrl": null,
+      "en": {
+        "title": "Сойдёмся",
+        "category": "Web app / meetups",
+        "description": "An app that helps friends choose a place to meet: share preferences, explore options and vote on a plan together.",
+        "note": "Interactive demo. Meetings and votes are saved only in the visitor’s browser.",
+        "features": [
+          "Preferences and participant budgets",
+          "Voting as demo participants",
+          "Demo data saved in the browser"
+        ],
+        "desktop": {
+          "alt": "Desktop view of Сойдёмся: a headline about spending less time messaging and more time meeting, with friends around a table"
+        },
+        "mobile": {
+          "alt": "Mobile view of Сойдёмся: creating a meetup and an illustration of friends"
+        }
+      }
     }
-  ]
+  ],
+  "ownerNameEn": "Vladislav Yashchishen",
+  "copy": {
+    "ru": {
+      "pageTitle": "vantak — разработка сайтов",
+      "metaDescription": "vantak — разработчик сайтов. Дизайн с вниманием к композиции, деталям и удобству на любом экране. Работы и прямая связь.",
+      "skip": "К содержимому",
+      "brandTop": "vantak — наверх",
+      "mainNav": "Основная навигация",
+      "mobileNav": "Мобильная навигация",
+      "work": "Работы",
+      "about": "Обо мне",
+      "contacts": "Контакты",
+      "discuss": "Обсудить проект",
+      "menu": "Меню",
+      "close": "Закрыть",
+      "mobileWork": "Работы<span>01</span>",
+      "mobileAbout": "Обо мне<span>02</span>",
+      "mobileContacts": "Контакты<span>03</span>",
+      "eyebrow": "Независимый веб-разработчик",
+      "heroTitle": "От идеи<br><span>до готового сайта.</span>",
+      "heroDescription": "Я vantak. Разрабатываю сайты, в которых дизайн помогает раскрыть идею.",
+      "viewWork": "Смотреть работы",
+      "telegram": "Написать в Telegram",
+      "process": "Как я работаю",
+      "idea": "Идея",
+      "ideaNote": "Понять задачу",
+      "design": "Дизайн",
+      "designNote": "Найти форму",
+      "code": "Код",
+      "codeNote": "Собрать детали",
+      "website": "Сайт",
+      "websiteNote": "Готов к запуску",
+      "footnote": "Идея. Композиция. Детали.",
+      "scrollWork": "Листай к работам",
+      "workIndex": "01 / Портфолио",
+      "workTitle": "Избранные<br>работы<span class=\"accent\">.</span>",
+      "workNote": "Три работы.<br>Три разных подхода.",
+      "aboutIndex": "02 / Обо мне",
+      "aboutCaption": "За каждым сайтом — человек",
+      "signCaption": "Идея становится сайтом",
+      "aboutLead": "Внимание к целому.<br>И к каждой детали.",
+      "aboutText": "Я разрабатываю сайты под именем vantak. Мне важно, как устроена страница: куда падает взгляд, как читается текст и насколько легко найти нужное.",
+      "aboutMore": "Работаю с композицией, ритмом и деталями. Собираю всё в понятный интерфейс, который удобно использовать и на большом экране, и на телефоне.",
+      "composition": "Композиция",
+      "details": "Детали",
+      "usability": "Удобство",
+      "contactIndex": "03 / Контакты",
+      "contactTitle": "Обсудим<br>твой сайт<span class=\"accent\">?</span>",
+      "contactText": "Есть идея или уже готовая задача?<br>Напиши — начнём с разговора.",
+      "contactTelegram": "Написать в Telegram<small data-telegram-handle>@VANTAK_1</small>",
+      "top": "Наверх",
+      "imageTitle": "Просмотр проекта",
+      "closeImage": "Закрыть изображение",
+      "lightboxHint": "Закрыть — Esc или клик вне изображения",
+      "project": "Проект",
+      "closeProject": "Закрыть проект",
+      "desktop": "Компьютерная версия",
+      "mobile": "Мобильная версия",
+      "loading": "Загружаю проект…",
+      "desktopPlaceholder": "Место для скриншота проекта",
+      "mobilePlaceholder": "Место для мобильного экрана",
+      "phone": "Телефон",
+      "open": "Открыть",
+      "enlarge": "Увеличить",
+      "openSite": "Открыть сайт",
+      "github": "Код на GitHub",
+      "clickOpen": "Нажми на экран, чтобы открыть сайт",
+      "clickEnlarge": "Нажми на экран, чтобы рассмотреть",
+      "previewSoon": "Превью готовится",
+      "devices": "Компьютер + телефон",
+      "realScreens": "Реальные экраны будут здесь",
+      "previewNote": "На телефоне компьютерная версия может выглядеть иначе. Для удобного просмотра выбери мобильный экран.",
+      "role": "Моя роль",
+      "stack": "Технологии",
+      "features": "Особенности проекта",
+      "tasks": "Выполненные задачи",
+      "screenshotsSoon": "Скриншоты готовятся к добавлению",
+      "theme": "Тема",
+      "lightTheme": "Светлая тема",
+      "enableLight": "Включить светлую тему",
+      "enableDark": "Включить тёмную тему",
+      "switchLanguage": "Switch to English"
+    },
+    "en": {
+      "pageTitle": "vantak — web developer",
+      "metaDescription": "vantak — web developer. Thoughtful composition, attention to detail and interfaces that work on every screen. Selected work and direct contact.",
+      "skip": "Skip to content",
+      "brandTop": "vantak — back to top",
+      "mainNav": "Main navigation",
+      "mobileNav": "Mobile navigation",
+      "work": "Work",
+      "about": "About",
+      "contacts": "Contact",
+      "discuss": "Let’s talk",
+      "menu": "Menu",
+      "close": "Close",
+      "mobileWork": "Work<span>01</span>",
+      "mobileAbout": "About<span>02</span>",
+      "mobileContacts": "Contact<span>03</span>",
+      "eyebrow": "Independent web developer",
+      "heroTitle": "From an idea<br><span>to a finished website.</span>",
+      "heroDescription": "I’m vantak. I build websites where design helps bring an idea to life.",
+      "viewWork": "View my work",
+      "telegram": "Message on Telegram",
+      "process": "How I work",
+      "idea": "Idea",
+      "ideaNote": "Understand the goal",
+      "design": "Design",
+      "designNote": "Find the right form",
+      "code": "Code",
+      "codeNote": "Bring it together",
+      "website": "Website",
+      "websiteNote": "Ready to launch",
+      "footnote": "Idea. Composition. Details.",
+      "scrollWork": "Scroll to my work",
+      "workIndex": "01 / Portfolio",
+      "workTitle": "Selected<br>work<span class=\"accent\">.</span>",
+      "workNote": "Three projects.<br>Three different approaches.",
+      "aboutIndex": "02 / About",
+      "aboutCaption": "A person behind every website",
+      "signCaption": "An idea becomes a website",
+      "aboutLead": "Attention to the whole.<br>And to every detail.",
+      "aboutText": "I build websites under the name vantak. I care about how a page works: where your eye goes, how the text reads and how easy it is to find what you need.",
+      "aboutMore": "I work with composition, rhythm and details to create clear interfaces that feel comfortable on a desktop and a phone.",
+      "composition": "Composition",
+      "details": "Details",
+      "usability": "Usability",
+      "contactIndex": "03 / Contact",
+      "contactTitle": "Let’s talk<br>about your website<span class=\"accent\">.</span>",
+      "contactText": "Have an idea or a project in mind?<br>Send me a message — let’s start a conversation.",
+      "contactTelegram": "Message on Telegram<small data-telegram-handle>@VANTAK_1</small>",
+      "top": "Back to top",
+      "imageTitle": "Project preview",
+      "closeImage": "Close image",
+      "lightboxHint": "Press Esc or click outside the image to close",
+      "project": "Project",
+      "closeProject": "Close project",
+      "desktop": "Desktop version",
+      "mobile": "Mobile version",
+      "loading": "Loading project…",
+      "desktopPlaceholder": "Space for a project screenshot",
+      "mobilePlaceholder": "Space for a mobile screenshot",
+      "phone": "Phone",
+      "open": "Open",
+      "enlarge": "Enlarge",
+      "openSite": "Open website",
+      "github": "Code on GitHub",
+      "clickOpen": "Click a screen to explore the website",
+      "clickEnlarge": "Click a screen for a closer look",
+      "previewSoon": "Preview coming soon",
+      "devices": "Desktop + mobile",
+      "realScreens": "Real screenshots will appear here",
+      "previewNote": "The desktop version may look different on a phone. Choose the mobile screen for a more comfortable preview.",
+      "role": "My role",
+      "stack": "Technology",
+      "features": "Project features",
+      "tasks": "Completed tasks",
+      "screenshotsSoon": "Screenshots coming soon",
+      "theme": "Theme",
+      "lightTheme": "Light theme",
+      "enableLight": "Switch to light theme",
+      "enableDark": "Switch to dark theme",
+      "switchLanguage": "Переключить на русский"
+    }
+  }
 };
-
