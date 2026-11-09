@@ -16,7 +16,7 @@ window.PORTFOLIO = {
       "title": "Ангел детейлинг",
       "category": "Сайт / детейлинг-студия",
       "description": "Сайт студии Angel Detailing в Санкт-Петербурге: услуги по уходу за автомобилем, галерея работ, отзывы и контакты.",
-      "note": null,
+      "note": "Инициативный концепт, созданный мной для портфолио. Не является заказом Angel Detailing или официальным сайтом студии.",
       "role": null,
       "tasks": [],
       "stack": "HTML · CSS · JavaScript",
@@ -44,6 +44,7 @@ window.PORTFOLIO = {
         "title": "Angel Detailing",
         "category": "Website / detailing studio",
         "description": "A website for Angel Detailing in Saint Petersburg: car care services, a project gallery, reviews and contact details.",
+        "note": "A self-initiated concept created for my portfolio. Not commissioned by Angel Detailing and not the studio’s official website.",
         "features": [
           "Service catalogue and site search",
           "Car and project gallery",
